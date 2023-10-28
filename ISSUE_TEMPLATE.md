@@ -37,6 +37,11 @@ To find your version, get the image name of a mailu container and read  the vers
 $> docker ps -a | grep mailu
 140b09d4b09c    mailu/roundcube:1.7    "docker-php-entrypoi…"    2 weeks ago    Up 2 days (healthy)    80/tcp
 $> grep MAILU_VERSION docker-compose.yml mailu.env
+
+If you are not using docker compose do not file any new issue here.
+Kubernetes related issues belong to https://github.com/Mailu/helm-charts/issues
+If you are not using docker compose or kubernetes, create a new thread on user support in [disussions](https://github.com/Mailu/Mailu/discussions/categories/user-support).
+Non-bug reports (or bug reports that do not follow the template) are moved to [disussions](https://github.com/Mailu/Mailu/discussions).
 -->
 
 If you are not using docker compose do not file any new issue here.
