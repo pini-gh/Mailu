@@ -36,6 +36,6 @@ while True:
 
 # Run rspamd
 os.system("mkdir -m 755 -p /run/rspamd")
-os.system("chown rspamd:rspamd /run/rspamd")
-os.system("find /var/lib/rspamd | grep -v /filter | xargs -n1 chown rspamd:rspamd")
-os.execv("/usr/bin/rspamd", ["rspamd", "-f", "-u", "rspamd", "-g", "rspamd"])
+os.system("chown _rspamd:_rspamd /run/rspamd")
+os.system("find /var/lib/rspamd | grep -v /filter | xargs -n1 chown _rspamd:_rspamd")
+os.execv("/usr/bin/rspamd", ["rspamd", "-f", "-u", "_rspamd", "-g", "_rspamd"])
